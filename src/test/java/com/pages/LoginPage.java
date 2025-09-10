@@ -40,10 +40,16 @@ public class LoginPage{
 	}
 	
 	public void clickloginbutton() {
-		
-		wait = new WebDriverWait(driver,Duration.ofSeconds(20));
-		wait.until(ExpectedConditions.elementToBeClickable(Locators.login)).click();
+	    try {
+	        // Use explicit wait for the login button to be clickable
+	        WebElement loginBtn = wait.until(ExpectedConditions.elementToBeClickable(Locators.login));
+	        loginBtn.click();
+	        Reporter.generateReport(driver, extTest, Status.PASS, "Login button clicked successfully");
+	    } catch (TimeoutException te) {
+	        Reporter.generateReport(driver, extTest, Status.FAIL, "Login button not found or clickable");
+	    }
 	}
+
 	
 	public void entermobilenumber(String mnumber) {
 		
