@@ -6,43 +6,31 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
+import java.util.List;
 
-public class HomePage {
+public class homepage {
+
     WebDriver driver;
     WebDriverWait wait;
 
-    public HomePage(WebDriver driver) {
+    public homepage(WebDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
     }
 
-    // Locator for Lab Tests tab
-    By labTestsTab = By.xpath("//*[@id='fixedHeaderCT']/div/div[2]/div[1]/ul/li[3]");
+    By labTestsTab = By.xpath("//*[@id=\"fixedHeaderCT\"]/div/div[2]/div[1]/ul/li[3]/a");
+    By modalOverlay = By.cssSelector(".ProfileNew_modalBackground__tCWPu");
 
-    // Locator for popup background (blocking element)
-    By popupBackground = By.cssSelector(".ProfileNew_modalBackground__tCWPu");
-
-    // Click Lab Tests tab safely
     public void clickLabTests() {
-        try {
-            // Wait for popup and close it if present
-            wait.withTimeout(Duration.ofSeconds(3));
-            WebElement popup = wait.until(ExpectedConditions.visibilityOfElementLocated(popupBackground));
-            if (popup.isDisplayed()) {
-                System.out.println("Popup detected. Closing it...");
-                popup.click(); // click outside / or ESC key if needed
-                Thread.sleep(500); // small wait for it to disappear
-            }
-        } catch (Exception e) {
-            System.out.println("No popup blocking, continuing...");
-        }
+        By labTestsTab = By.xpath("//*[@id=\"fixedHeaderCT\"]/div/div[2]/div[1]/ul/li[3]/a");
 
-        // Now click Lab Tests tab
-        wait.until(ExpectedConditions.elementToBeClickable(labTestsTab)).click();
+        WebElement labTab = new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.presenceOfElementLocated(labTestsTab));
+
+        // Force click via JavaScript
+        ((org.openqa.selenium.JavascriptExecutor) driver).executeScript("arguments[0].click();", labTab);
+
+        System.out.println("Clicked Lab Tests tab using JS executor.");
     }
 
-    // Verify navigation
-    public boolean isOnLabTestsPage() {
-        return driver.getCurrentUrl().contains("lab-tests");
-    }
 }

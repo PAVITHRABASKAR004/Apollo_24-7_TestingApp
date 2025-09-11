@@ -1,11 +1,9 @@
 Feature:Login
-@Ignore
 Scenario:Verification of login failure with invalid mabile number
 Given user is on the login page
 When the user enter the invalid Mobile Number as "<invalid_mobile_no>"
 Then an error message is displayed "Invalid mobile number"
 
-@Ignore
 Scenario:Verification of login failure with invalid OTP
 Given user is on the login page
 When the user enter the valid Mobile Number as "<mobileno>"

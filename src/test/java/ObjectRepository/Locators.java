@@ -3,8 +3,8 @@ package ObjectRepository;
 import org.openqa.selenium.By;
 
 public class Locators {
-		
-		// login button
+
+	// login button
 		public static By login = By.xpath("//span[text()='Login']");
 		
 		// Mobile Number entry
@@ -19,6 +19,9 @@ public class Locators {
 		// verify button
 		public static By verifybutton = By.xpath("//button[contains(text(), 'Verify')]");
 		
+		// resend button
+		public static By resendbtn = By.xpath("//span[text()='Resend OTP']");
+		
 		//validate login
 		public static By validatelogin = By.xpath("//*[@id=\"loginPopup\"]/img");
 		
@@ -30,32 +33,25 @@ public class Locators {
 		
 		// close button
 		public static By closebtn = By.xpath("//span[@class='Rb']");
-		// Login/Popup overlays
-		public static final By modalOverlay = By.cssSelector("div.ProfileNew_modalBackground__tCWPu");
+		public static By profileclose = By.xpath("//div[contains(@class, 'ProfileNew_icon-ic_cross')]");
+		// Lab Tests tab
+		public static By labTestsTab = By.xpath("//*[@id=\"fixedHeaderCT\"]/div/div[2]/div[1]/ul/li[3]/a");
 
-		// Buy Medicines page validation
-	    public static By buyMedicinesTab = By.linkText("Buy Medicines");
-	    public static By buyMedicinesTitle = By.xpath("//h1[@class='buyMedicineTitle' and text()='Buy Medicines and Essentials']");
+		// Doctor Created Health Checks - Full Body Checkup
+		public static By fullBodyCheckup = By.xpath("//*[@id=\"mainContainerCT\"]/div[1]/div[1]/div/div[1]/a/div");
 
-	    // Search box
-	    public static By searchBox = By.xpath("//div[@data-placeholder='Search Medicines']");
-	    public static By searchInput = By.id("searchProduct");
- // after clicking search box actual input opens
+		// First test under the package
+		public static By firstTest = By.xpath("//*[@id=\"mainContainerCT\"]/div/div/div[1]/div[3]/div[2]/div[2]/div/div/div[1]/div/div[2]/div[2]/button");
 
-	    // Filters
-	    public static final By FILTER_CHIPS = By.xpath("//div[contains(@class,'FilterSearchMedicine_chipsUI')]");
+		// Cart or selection area
+		public static By cartArea = By.xpath("//*[@id=\"mainContainerCT\"]/div/div/div[2]/div/div[2]/div[1]");
+		
+		 public static By viewDetailsButton = By.xpath("//*[@id=\"mainContainerCT\"]/div/div/div[2]/div/div[2]/div[1]/div/span");
 
-	    // Product validation
-	    public static By productSearchResult = By.xpath("//h3[contains(@class,'ProductSortSearch_title__aAuhf') and contains(text(),'Paracip-650 Tablet 10')]");
+		    // Proceed to Cart button
+		    public static By proceedToCartButton = By.xpath("/html/body/main/div[4]/div/div[3]/div/button");
 
-	    // Add button & Quantity increment
-	    public static By addProductButton = By.xpath("//button[@aria-label='Add']//span[text()='Add']");
-	    public static By increaseProductQuantity = By.xpath("//span[@role='button' and @aria-label='Increase button']");
-
-	    // View cart button
-	    public static By viewCartButton = By.xpath("//button[@aria-label='Button']//span[text()='View Cart']");
-
-  
-
+		    // Add Member button in the cart
+		    public static By addMemberButton = By.xpath("/html/body/main/div[2]/div[1]/div/div[1]/div[2]/button/span");
 
 }
