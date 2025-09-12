@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\pavib\AppData\Local\Temp\testng-eclipse-280153352\testng-customsuite.xml</span>
+                    <span>C:\Users\pavib\AppData\Local\Temp\testng-eclipse-291892588\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Continue after patient selection&quot;, &quot;Cart Checkout - Patient Selection&quot;)">runScenario("Continue after patient selection", "Cart Checkout - Patient Selection")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,22 +117,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Select a test  in cart&quot;, &quot;Cart Selection and Modification&quot;)">runScenario("Select a test  in cart", "Cart Selection and Modification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Launching the browser successfully&quot;, &quot;Launching the browser&quot;)">runScenario("Launching the browser successfully", "Launching the browser")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verification of login failure with invalid OTP&quot;, &quot;Login&quot;)">runScenario("Verification of login failure with invalid OTP", "Login")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify complete lab test selection flow&quot;, &quot;Lab Test Package Selection&quot;)">runScenario("Verify complete lab test selection flow", "Lab Test Package Selection")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;View Details, Proceed to Cart, and Add Members&quot;, &quot;Lab Test Cart Flow&quot;)">runScenario("View Details, Proceed to Cart, and Add Members", "Lab Test Cart Flow")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -128,7 +132,32 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;View Details, Proceed to Cart, and Add Members&quot;, &quot;Lab Test Cart Flow&quot;)">runScenario("View Details, Proceed to Cart, and Add Members", "Lab Test Cart Flow")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify complete lab test selection flow&quot;, &quot;Lab Test Package Selection&quot;)">runScenario("Verify complete lab test selection flow", "Lab Test Package Selection")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Select the first patient&quot;, &quot;Cart Checkout - Patient Selection&quot;)">runScenario("Select the first patient", "Cart Checkout - Patient Selection")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login successfully&quot;, &quot;Login&quot;)">runScenario("Login successfully", "Login")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verification of login failure with invalid OTP&quot;, &quot;Login&quot;)">runScenario("Verification of login failure with invalid OTP", "Login")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Proceed to cart&quot;, &quot;Cart Checkout - Patient Selection&quot;)">runScenario("Proceed to cart", "Cart Checkout - Patient Selection")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -143,6 +172,32 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.runner.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Continue after patient selection&quot;, &quot;Cart Checkout - Patient Selection&quot;)">
+                  </a> <!-- runScenario("Continue after patient selection", "Cart Checkout - Patient Selection") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Continue after patient selection","Cart Checkout - Patient Selection")</span>
+                  <div class="stack-trace">java.lang.AssertionError: Address selection page not displayed! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepdefinitions.CartCheckoutPatientStep.the_user_should_be_navigated_to_the_address_selection_page(CartCheckoutPatientStep.java:53)
+	at ✽.the user should be navigated to the address selection page(file:///C:/Users/pavib/eclipse-workspace/Apollo247_testing_app/src/test/resources/features/6_cartcheckout.feature:17)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -151,40 +206,20 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="runScenario(&quot;Select a test  in cart&quot;, &quot;Cart Selection and Modification&quot;)">
+                  </a> <!-- runScenario("Select a test  in cart", "Cart Selection and Modification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Select a test  in cart","Cart Selection and Modification")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="runScenario(&quot;Launching the browser successfully&quot;, &quot;Launching the browser&quot;)">
                   </a> <!-- runScenario("Launching the browser successfully", "Launching the browser") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Launching the browser successfully","Launching the browser")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verification of login failure with invalid OTP&quot;, &quot;Login&quot;)">
-                  </a> <!-- runScenario("Verification of login failure with invalid OTP", "Login") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verification of login failure with invalid OTP","Login")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify complete lab test selection flow&quot;, &quot;Lab Test Package Selection&quot;)">
-                  </a> <!-- runScenario("Verify complete lab test selection flow", "Lab Test Package Selection") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify complete lab test selection flow","Lab Test Package Selection")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;View Details, Proceed to Cart, and Add Members&quot;, &quot;Lab Test Cart Flow&quot;)">
-                  </a> <!-- runScenario("View Details, Proceed to Cart, and Add Members", "Lab Test Cart Flow") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("View Details, Proceed to Cart, and Add Members","Lab Test Cart Flow")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -201,10 +236,60 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="runScenario(&quot;View Details, Proceed to Cart, and Add Members&quot;, &quot;Lab Test Cart Flow&quot;)">
+                  </a> <!-- runScenario("View Details, Proceed to Cart, and Add Members", "Lab Test Cart Flow") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("View Details, Proceed to Cart, and Add Members","Lab Test Cart Flow")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify complete lab test selection flow&quot;, &quot;Lab Test Package Selection&quot;)">
+                  </a> <!-- runScenario("Verify complete lab test selection flow", "Lab Test Package Selection") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify complete lab test selection flow","Lab Test Package Selection")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Select the first patient&quot;, &quot;Cart Checkout - Patient Selection&quot;)">
+                  </a> <!-- runScenario("Select the first patient", "Cart Checkout - Patient Selection") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Select the first patient","Cart Checkout - Patient Selection")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="runScenario(&quot;Login successfully&quot;, &quot;Login&quot;)">
                   </a> <!-- runScenario("Login successfully", "Login") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Login successfully","Login")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verification of login failure with invalid OTP&quot;, &quot;Login&quot;)">
+                  </a> <!-- runScenario("Verification of login failure with invalid OTP", "Login") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verification of login failure with invalid OTP","Login")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Proceed to cart&quot;, &quot;Cart Checkout - Patient Selection&quot;)">
+                  </a> <!-- runScenario("Proceed to cart", "Cart Checkout - Patient Selection") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Proceed to cart","Cart Checkout - Patient Selection")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -214,7 +299,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\pavib\AppData\Local\Temp\testng-eclipse-280153352\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\pavib\AppData\Local\Temp\testng-eclipse-291892588\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -271,31 +356,47 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'com.runner.TestRunner')
-data.setCell(0, 3, 60481);
+data.setCell(0, 3, 61167);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'com.runner.TestRunner')
-data.setCell(1, 3, 10572);
+data.setCell(1, 3, 11012);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'com.runner.TestRunner')
-data.setCell(2, 3, 7351);
+data.setCell(2, 3, 10489);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'com.runner.TestRunner')
-data.setCell(3, 3, 3988);
+data.setCell(3, 3, 3738);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'runScenario')
 data.setCell(4, 2, 'com.runner.TestRunner')
-data.setCell(4, 3, 3418);
+data.setCell(4, 3, 3164);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'runScenario')
 data.setCell(5, 2, 'com.runner.TestRunner')
-data.setCell(5, 3, 2241);
+data.setCell(5, 3, 1686);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'com.runner.TestRunner')
+data.setCell(6, 3, 1302);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'com.runner.TestRunner')
+data.setCell(7, 3, 268);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'com.runner.TestRunner')
+data.setCell(8, 3, 259);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'com.runner.TestRunner')
+data.setCell(9, 3, 212);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -328,36 +429,54 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.runner.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@67d8faec)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@45f9d394)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("Launching the browser successfully", "Launching the browser")</span>
-                <span class="method-start">7030 ms</span>
+                <span class="method-start">10043 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Verification of login failure with invalid mabile number", "Login")</span>
-                <span class="method-start">9280 ms</span>
+                <span class="method-start">11739 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Verification of login failure with invalid OTP", "Login")</span>
-                <span class="method-start">12702 ms</span>
+                <span class="method-start">14906 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Login successfully", "Login")</span>
-                <span class="method-start">23276 ms</span>
+                <span class="method-start">25920 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Verify complete lab test selection flow", "Lab Test Package Selection")</span>
-                <span class="method-start">83777 ms</span>
+                <span class="method-start">87088 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("View Details, Proceed to Cart, and Add Members", "Lab Test Cart Flow")</span>
-                <span class="method-start">91133 ms</span>
+                <span class="method-start">97578 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Select a test  in cart", "Cart Selection and Modification")</span>
+                <span class="method-start">97853 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Proceed to cart", "Cart Checkout - Patient Selection")</span>
+                <span class="method-start">101593 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Select the first patient", "Cart Checkout - Patient Selection")</span>
+                <span class="method-start">101854 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Continue after patient selection", "Cart Checkout - Patient Selection")</span>
+                <span class="method-start">103159 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">95163 ms</span>
+                <span class="method-start">103374 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

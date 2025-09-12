@@ -39,33 +39,4 @@ public class LabTestCartPage {
             e.printStackTrace();
         }
     }
-
-
-    // Click Proceed to Cart button
-    public void clickProceedToCart() {
-        try {
-            WebElement proceedBtn = wait.until(ExpectedConditions.elementToBeClickable(
-                By.xpath("//button[contains(text(),'Proceed to Cart')]")));
-            proceedBtn.click();
-            extTest.log(Status.PASS, "Clicked on Proceed to Cart button");
-        } catch (Exception e) {
-            extTest.log(Status.FAIL, "Failed to click on Proceed to Cart button");
-            e.printStackTrace();
-        }
-    }
-
-    // Add members
-    public void addMembers(int count) {
-        try {
-            for (int i = 1; i <= count; i++) {
-                WebElement addMemberBtn = wait.until(ExpectedConditions.elementToBeClickable(
-                    By.xpath("//button[contains(text(),'Add Member')]")));
-                addMemberBtn.click();
-            }
-            extTest.log(Status.PASS, count + " member(s) added successfully");
-        } catch (Exception e) {
-            extTest.log(Status.FAIL, "Failed to add members");
-            e.printStackTrace();
-        }
-    }
 }

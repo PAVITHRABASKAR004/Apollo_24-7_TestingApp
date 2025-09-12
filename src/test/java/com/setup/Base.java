@@ -37,6 +37,9 @@ public class Base {
 		driver.get(prop.getProperty("URL"));
 		
 	}
+	 public static WebDriver getDriver() {
+	        return driver;  // ✅ this lets step defs reuse the driver
+	    }
 	
 	public static void sleep() {
 		try {
