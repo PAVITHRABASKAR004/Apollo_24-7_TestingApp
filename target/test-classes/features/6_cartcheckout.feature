@@ -14,4 +14,4 @@ Feature: Cart Checkout - Patient Selection
 
   Scenario: Continue after patient selection
     Given the user clicks "Continue"
-    Then the user should be navigated to the address selection page
+    

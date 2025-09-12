@@ -9,7 +9,7 @@ public class Cartstepdef {
 
     WebDriver driver = Hooks.driver;
     ExtentTest extTest = Hooks.extTest;
-    cartselection_mod cartPage = new cartselection_mod(driver);
+    cartselection_mod cartPage = new cartselection_mod(driver,extTest);
 
     // --------------------------
     // Background
