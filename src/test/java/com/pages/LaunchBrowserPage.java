@@ -2,12 +2,8 @@ package com.pages;
 
 import java.time.Duration;
 import java.util.Properties;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
@@ -38,7 +34,6 @@ public class LaunchBrowserPage {
 				Reporter.generateReport(driver,extTest,Status.PASS," Apollo 24/7 Website Opened");
 				}
 				catch(TimeoutException te) {
-					//fail the extent report
 					Reporter.generateReport(driver,extTest,Status.FAIL,"Apollo 24/7 Website not opened");
 				}
 	 }
@@ -52,7 +47,6 @@ public class LaunchBrowserPage {
 		    Reporter.generateReport(driver,extTest,Status.PASS,"Correct Apollo 24/7 is Website Opened");
 			}
 			catch(TimeoutException te) {
-				//fail the extent report
 				Reporter.generateReport(driver,extTest,Status.FAIL,"Incorrect Website Opened");
 			}
 			return true ;
