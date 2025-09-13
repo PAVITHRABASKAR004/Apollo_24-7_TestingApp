@@ -17,6 +17,9 @@ public class LabTestCartPage {
     WebDriverWait wait;
     ExtentTest extTest;
 
+    // ✅ Locator used in this page
+    private By viewDetailsButton = By.xpath("//*[contains(text(),'View Details')]");
+
     public LabTestCartPage(WebDriver driver, ExtentTest extTest) {
         this.driver = driver;
         this.extTest = extTest;
@@ -24,11 +27,10 @@ public class LabTestCartPage {
     }
 
     // Click View Details button
- // Click View Details button
     public void clickViewDetails() {
         try {
             WebElement viewDetailsBtn = wait.until(ExpectedConditions
-                    .visibilityOfElementLocated(By.xpath("//*[contains(text(),'View Details')]")));
+                    .visibilityOfElementLocated(viewDetailsButton));
             
             System.out.println("Found element text: " + viewDetailsBtn.getText()); // debug log
             viewDetailsBtn.click();

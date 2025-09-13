@@ -1,5 +1,5 @@
 Feature:Login
-Scenario:Verification of login failure with invalid mabile number
+Scenario:Verification of login failure with invalid mobile number
 Given user is on the login page
 When the user enter the invalid Mobile Number as "<invalid_mobile_no>"
 Then an error message is displayed "Invalid mobile number"
